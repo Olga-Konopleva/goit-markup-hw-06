@@ -661,12 +661,12 @@ a {
     top: 50%;
     left: 50%;
 
-    transform: translate(-50%,-50%) scale(1);
-
+    padding: 40px;
     min-width: 528px;
     min-height: 581px;
     background-color: var(--primary-white-color);
 
+    transform: translate(-50%,-50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -699,4 +699,8 @@ a {
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+}
+
+.form-label {
+    display: block;
 }
