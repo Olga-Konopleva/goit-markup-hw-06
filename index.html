@@ -38,7 +38,7 @@
         <!-- Блог Герой -->
         <section class="hero">
             <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-            <button class="button" data-modal-open>Заказать услугу</button>
+            <button class="button hero-button" data-modal-open>Заказать услугу</button>
         </section>
         <!-- Наши преимущества -->
         <section class="advantages">
@@ -357,6 +357,11 @@
                     </li>
                 </ul>
             </div>
+            <form action="" class="subscribe">
+                <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+                <input type="email" class="subscribe-input" placeholder="E-mail">
+                <button type="submit" class="button subscribe-button">Подписаться</button>
+            </form>   
         </div>
     </footer>
 <!-- Модальное окно -->
@@ -371,21 +376,21 @@
             <form action="">
                 <label class="form-label">
                     Имя
-                    <input type="text" name="name" class="form-input">
+                    <input type="text" name="user-name" class="form-input">
                     <svg class="form-icon">
                         <use href="./images/sprite-icon.svg#personal-modal"></use>
                     </svg>
                 </label>
                 <label class="form-label">
                     Телефон
-                    <input type="tel" name="tel" class="form-input">
+                    <input type="tel" name="user-tel" class="form-input">
                     <svg class="form-icon">
                         <use href="./images/sprite-icon.svg#phone-modal"></use>
                     </svg>
                 </label>
                 <label class="form-label">
                     Почта
-                    <input type="email" name="email" class="form-input">
+                    <input type="email" name="user-email" class="form-input">
                     <svg class="form-icon">
                         <use href="./images/sprite-icon.svg#email-modal"></use>
                     </svg>
@@ -395,7 +400,8 @@
                     <textarea name="comment" class="form-input comment-input" placeholder="Введите текст"></textarea>
                 </label>
                 <label class="checkbox">
-                    <input type="checkbox" name="agreement" class="checkbox-input">
+                    <input type="checkbox" name="agreement" class="checkbox-input visually-hidden">
+                    <span class="checkbox-icon"></span>
                     Соглашаюсь с рассылкой и принимаю <a href="" class="checkbox-link">Условия договора</a>
                 </label>
                 <button type="submit" class="form-btn">Отправить</button>
